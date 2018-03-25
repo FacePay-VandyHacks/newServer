@@ -16,10 +16,9 @@ const envVarsSchema = Joi.object({
       then: Joi.boolean().default(true),
       otherwise: Joi.boolean().default(false)
     }),
-  JWT_SECRET: Joi.string().required()
+  JWT_SECRET: Joi.string().default('23452345')
     .description('JWT Secret required to sign'),
-  MONGO_HOST: Joi.string().required()
-    .description('Mongo DB host url'),
+  MONGO_HOST: Joi.string(),
   MONGO_PORT: Joi.number()
     .default(27017)
 }).unknown()

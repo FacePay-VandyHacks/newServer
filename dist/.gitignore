@@ -36,19 +36,19 @@ coverage
 .lock-wscript
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
-# build/Release
+build/Release
 
 # Dependency directory
-# node_modules
+node_modules
 
 # Optional npm cache directory
-# .npm
+.npm
 
 # Optional REPL history
 .node_repl_history
 
 # .env
-# .env
+.env
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*

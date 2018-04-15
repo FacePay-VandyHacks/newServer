@@ -16,7 +16,7 @@ mongoose.Promise = Promise;
 const options = { useMongoClient: true };
 // connect to mongo db
 const mongoUri = 'mongodb://bbroderick:Vanderbilt2018@ds115569.mlab.com:15569/accenture';
-mongoose.connect(mongoUri, options);
+mongoose.connect(mongoUri, options).then(console.log("Mongo is Connected"));
 mongoose.connection.on('error', () => {
   throw new Error(`unable to connect to database: ${mongoUri}`);
 });
